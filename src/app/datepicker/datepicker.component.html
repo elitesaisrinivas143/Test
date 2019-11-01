@@ -1,0 +1,116 @@
+<div class="row">
+  <div class="col-md-2">
+    <div class="custom-calendar">
+      <h4>Date</h4>
+      <div class="input-group mt-3 mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="yyyy/mm/dd"
+          bsDatepicker
+          #dp="bsDatepicker"
+          [bsConfig]="{ showWeekNumbers: false }"
+          [bsValue]="bsInlineValue"
+        />
+
+        <div class="input-group-append">
+          <button
+            class="btn transparent"
+            type="button"
+            id="button-addon2"
+            (click)="dp.show()"
+            [attr.aria-expanded]="dp.isOpen"
+          >
+            <i class="icon-calendar-empty"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-calendar date-range">
+      <h4>Date Range</h4>
+      <div class="input-group mt-3 mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="yyyy/mm/dd  yyyy/mm/dd"
+          bsDaterangepicker
+          #dpr="bsDaterangepicker"
+          [bsConfig]="{ showWeekNumbers: false }"
+          [bsValue]="bsInlineRangeValue"
+        />
+
+        <div class="input-group-append">
+          <button
+            class="btn transparent"
+            type="button"
+            id="button-addon2"
+            (click)="dpr.show()"
+            [attr.aria-expanded]="dpr.isOpen"
+          >
+            <i class="icon-calendar-empty"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <div class="custom-calendar">
+      <h4>From</h4>
+      <div class="input-group mt-3 mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="yyyy/mm/dd"
+          bsDatepicker
+          #fromDate="bsDatepicker"
+          [bsConfig]="{ showWeekNumbers: false }"
+          [bsValue]="FromDate"
+        />
+
+        <div class="input-group-append">
+          <button
+            class="btn transparent"
+            type="button"
+            id="button-addon2"
+            (click)="fromDate.show()"
+            [attr.aria-expanded]="fromDate.isOpen"
+          >
+            <i class="icon-calendar-empty"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="custom-calendar">
+      <h4>To</h4>
+      <div class="input-group mt-3 mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="yyyy/mm/dd"
+          bsDatepicker
+          #toDate="bsDatepicker"
+          [bsConfig]="{ showWeekNumbers: false }"
+          [bsValue]="ToDate"
+        />
+
+        <div class="input-group-append">
+          <button
+            class="btn transparent"
+            type="button"
+            id="button-addon2"
+            (click)="toDate.show()"
+            [attr.aria-expanded]="toDate.isOpen"
+          >
+            <i class="icon-calendar-empty"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
