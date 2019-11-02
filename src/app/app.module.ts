@@ -1,6 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { DatepickerModule, BsDatepickerModule  } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +19,9 @@ import { DatePickerComponent } from './datepicker/datepicker.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    BsDatepickerModule.forRoot()
+    FormsModule,
+    BsDatepickerModule.forRoot(),
+    DatepickerModule.forRoot() 
   ],
   providers: [],
   bootstrap: [DatePickerComponent]
