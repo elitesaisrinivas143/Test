@@ -8,14 +8,17 @@
 }
   .small-modal .modal-content{
     width: 400px;
+    width: 100%;
     min-height:179px;
   }
   .medium-modal .modal-content{
     width: 600px;
+    width: 100%;
     min-height:300px;
   }
   .large-modal .modal-content{
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     min-height:500px;
   }
 .modal-content{
@@ -87,12 +90,22 @@
 
   @media (min-width: 576px){
     .small-modal .modal-dialog{
-        max-width: 400px !important;
+        max-width: 400px;
+        width: 100%;
     }
     .medium-modal .modal-dialog{
-        max-width: 600px !important;
+        max-width: 600px;
+        width: 100%;
+    }
+    .large-modal:before{
+      height: 20%;
     }
     .large-modal .modal-dialog{
-        max-width: 800px !important;
+      max-width: 800px;
+      width: 100%;
+    }
+    .large-modal .modal-content{
+      max-width: 800px;
+      width: 100%;
     }
   }
