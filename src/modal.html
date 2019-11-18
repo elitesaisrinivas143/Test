@@ -11,19 +11,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="moda.css">
 
     <title>Modal</title>
 
     <style>
-      .small-modal {
-        max-width: 400px;
-      }
-      .medium-modal {
-        max-width: 600px !important;
-      }
-      .large-modal {
-        max-width: 800px !important;
-      }
+   
     </style>
   </head>
   <body>
@@ -39,14 +32,14 @@
 
     <!-- Modal -->
     <div
-      class="modal fade"
+      class="modal fade small-modal"
       id="smallModal"
       tabindex="-1"
       role="dialog"
       aria-labelledby="smallModalTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog small-modal" role="document">
+      <div class="modal-dialog " role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="smallModalTitle">Modal title</h5>
@@ -65,12 +58,12 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-skip"
               data-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-save">Save changes</button>
           </div>
         </div>
       </div>
@@ -88,14 +81,14 @@
 
     <!-- Modal -->
     <div
-      class="modal fade"
+      class="modal fade medium-modal"
       id="mediumModal"
       tabindex="-1"
       role="dialog"
       aria-labelledby="mediumModalTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog medium-modal" role="document">
+      <div class="modal-dialog " role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="mediumModalTitle">Modal title</h5>
@@ -114,12 +107,12 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-skip"
               data-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-save">Save changes</button>
           </div>
         </div>
       </div>
@@ -137,14 +130,14 @@
 
     <!-- Modal -->
     <div
-      class="modal fade"
+      class="modal fade large-modal"
       id="largeModal"
       tabindex="-1"
       role="dialog"
       aria-labelledby="largeModalTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog large-modal" role="document">
+      <div class="modal-dialog " role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="largeModalTitle">Modal title</h5>
@@ -163,12 +156,12 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-skip"
               data-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-save">Save changes</button>
           </div>
         </div>
       </div>
@@ -186,3 +179,7 @@
     ></script>
   </body>
 </html>
+
+
+<!-- <a class="btn btn-md btn-blue mr-1 mb-1" href="#">btn-blue</a> -->
+<!-- <a class="btn btn-md btn-outline-blue mr-1 mb-1" href="#">btn-outline-blue</a> -->

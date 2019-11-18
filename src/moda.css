@@ -1,0 +1,98 @@
+.modal-dialog{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+}
+  .small-modal .modal-content{
+    width: 400px;
+    min-height:179px;
+  }
+  .medium-modal .modal-content{
+    width: 600px;
+    min-height:300px;
+  }
+  .large-modal .modal-content{
+    width: 800px;
+    min-height:500px;
+  }
+.modal-content{
+    border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #776e64;
+  background-color: #ffffff;
+}
+.modal-header{
+    border-bottom-width: 0;
+}
+.modal-header h5{
+    font-family: WorkSafeBCHalisR;
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #ed8b00;
+}
+.modal-footer{
+    border-top-width: 0;
+}
+.btn-skip{
+    width: 84px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid 1px #6399ae;
+    color: #6399ae;
+    font-weight: bold;
+
+}
+.btn-skip:hover{
+    color: #6399ae;
+}
+.btn-save{
+    width: 151px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #6399ae;
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-save:hover{
+    background: #97cade;
+    color: #fff;
+}
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+  }
+  
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  @media (min-width: 576px){
+    .small-modal .modal-dialog{
+        max-width: 400px !important;
+    }
+    .medium-modal .modal-dialog{
+        max-width: 600px !important;
+    }
+    .large-modal .modal-dialog{
+        max-width: 800px !important;
+    }
+  }
